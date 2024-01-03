@@ -1,0 +1,20 @@
+{
+  "name": "ele-form",
+  "version": "1.0.0",
+  "description": "element-plus form demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue3",
+    "element-plus"
+  ],
+  "author": "zsj",
+  "license": "ISC",
+  "dependencies": {
+    "element-plus": "^2.4.4",
+    "typescript": "^5.3.3",
+    "vue": "^3.4.3"
+  }
+}
