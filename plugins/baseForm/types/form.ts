@@ -1,4 +1,6 @@
+import { ButtonProps, RowProps } from "element-plus";
 import { ColEx } from "./index";
+import { CSSProperties } from "vue";
 export interface FormSchema {
   //布局相关的字段
   colProps?: Partial<ColEx>;
