@@ -1,11 +1,11 @@
 <template>
-    <el-form >
+    <el-form>
         <el-row>
-            <el-col></el-col>
+            <formItem></formItem>
         </el-row>
     </el-form>
 </template>
 <script  lang="ts" setup>
-import { ElForm, ElRow, ElCol } from 'element-plus';
-
+import { ElForm, ElRow } from 'element-plus';
+import formItem from './formItem/index.vue'
 </script>

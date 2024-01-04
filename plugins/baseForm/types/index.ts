@@ -1,4 +1,6 @@
-type ColSpanType = number ;
+import { Component, VNodeProps } from "vue";
+
+type ColSpanType = number;
 export interface ColEx {
   style?: any;
   /**
@@ -58,4 +60,27 @@ export interface ColEx {
    * @type { span: ColSpanType, offset: ColSpanType } | ColSpanType
    */
   xl?: { span: ColSpanType; offset: ColSpanType } | ColSpanType;
+}
+export type ComponentType = keyof ComponentProps;
+type ExtractPropTypes<T extends Component> = T extends new (...args: any) => any
+  ? Omit<InstanceType<T>["$props"], keyof VNodeProps>
+  : never;
+
+//组件props
+export interface ComponentProps {
+  input: ExtractPropTypes<
+    typeof import("element-plus/es/components/input")["default"]
+  >;
+  radio: ExtractPropTypes<
+    typeof import("element-plus/es/components/radio")["default"]
+  >;
+  radioGroup: ExtractPropTypes<
+    typeof import("element-plus/es/components/radio")["ElRadioGroup"]
+  >;
+  checkbox: ExtractPropTypes<
+    typeof import("element-plus/es/components/checkbox")["default"]
+  >;
+  checkboxGroup: ExtractPropTypes<
+    typeof import("element-plus/es/components/checkbox")["ElCheckboxGroup"]
+  >;
 }

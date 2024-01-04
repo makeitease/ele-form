@@ -9,16 +9,12 @@
   */
     "include": [
         // ** : 任意目录 ， * : 任意文件
-        "./src/**/*"
     ],
     "exclude": [
-        "./src/hello/**/*"
+        "./node_modules/*"
     ],
     // "extends": "./configs/base",
-    "files": [
-        "1.ts",
-        // "2.ts"
-    ],
+    "files": [ ],
     "compilerOptions": {
         // 用来指定 ES 版本 ESNext : 最新版。 'ES3', 'ES5', 'ES6'/'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', 'ESNext'
         "target": "ES2020",
